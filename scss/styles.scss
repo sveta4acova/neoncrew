@@ -91,10 +91,10 @@ main {
 .firstcol::before, .secondcol::before, .thirdcol::before {
 	content: "";
 	position: absolute;
-	left: -165%;
+	left: -150%;
 	height: 100%;
 	background-position: center;
-	// background-size: auto 100%;
+	background-size: auto 100%;
 	background-repeat: no-repeat;
 	transform: skewX(20deg);
 	width: 400%

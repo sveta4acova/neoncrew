@@ -85,9 +85,10 @@ main {
 .firstcol::before, .secondcol::before, .thirdcol::before {
   content: "";
   position: absolute;
-  left: -165%;
+  left: -150%;
   height: 100%;
   background-position: center;
+  background-size: auto 100%;
   background-repeat: no-repeat;
   -webkit-transform: skewX(20deg);
      -moz-transform: skewX(20deg);
