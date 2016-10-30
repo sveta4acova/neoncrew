@@ -1,9 +1,13 @@
 @font-face {
   font-family: CirceLight;
-  src: url(../fonts/CirceLight.ttf); }
+  src: url(../fonts/CirceLight.ttf);
+  src: url(../fonts/CirceLight.eot);
+  src: url(../fonts/Circe-ExtraLight.woff); }
 @font-face {
   font-family: Zamenhof;
-  src: url(../fonts/ZamenhofInverse.ttf); }
+  src: url(../fonts/ZamenhofInverse.ttf);
+  src: url(../fonts/ZamenhofInverse.eot);
+  src: url(../fonts/Zamenhof-Inverse.woff); }
 h1, h2 {
   font-family: 'Zamenhof';
   text-shadow: 0 0 18.5px rgba(71, 75, 255, 0.3), 0 0 13px rgba(39, 125, 255, 0.6);
@@ -21,12 +25,12 @@ h1, h2 {
   list-style: none; }
 
 body {
-  min-width: 790px;
   height: 100%;
   font: 14px/18px "CirceLight", Arial, sans-serif;
   color: #bfbfbf;
   overflow: hidden;
-  background-color: #000; }
+  background-color: #000;
+  position: relative; }
 
 a {
   color: #0f9bbe;
@@ -42,7 +46,7 @@ header {
   top: 50px;
   left: 170px;
   z-index: 2;
-  width: 450px;
+  max-width: 450px;
   pointer-events: none; }
 
 h1 {
@@ -115,7 +119,7 @@ main {
 
 article {
   position: relative;
-  z-index: 5;
+  z-index: 2;
   -webkit-transform: skewX(20deg);
      -moz-transform: skewX(20deg);
           transform: skewX(20deg);
@@ -144,6 +148,13 @@ article {
   padding: 0 10px;
   display: inline-block; }
 
+.text__descrip_inline {
+  display: inline;
+  box-shadow: -10px 0 0 0px #000, 10px 0 0 0px #000;
+  -moz-box-shadow: -10px 0 0 0px #000, 10px 0 0 0px #000;
+  line-height: 1em;
+  background-color: #000; }
+
 .view__btn {
   display: inline-block;
   background-color: transparent;
@@ -166,10 +177,12 @@ article {
 .social {
   position: absolute;
   bottom: 30px;
-  left: 48%;
+  left: 50%;
+  margin-left: -62px;
   display: -webkit-flex;
   display: -moz-box;
-  display: flex; }
+  display: flex;
+  z-index: 4; }
 
 .social a {
   display: block;
@@ -203,3 +216,46 @@ article {
   .text__descrip {
     font-size: 0.9em;
     line-height: 1.6em; } }
+@media only screen and (max-width: 768px) {
+  body {
+    min-width: auto;
+    overflow: visible; }
+
+  main {
+    display: block;
+    margin-left: 0;
+    width: 100%; }
+
+  header {
+    left: 30px;
+    top: 30px; }
+
+  h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px; }
+
+  .firstcol__container, .secondcol__container, .thirdcol__container {
+    margin-left: 0; }
+
+  .firstcol, .secondcol, .thirdcol {
+    height: 500px;
+    -webkit-transform: none;
+       -moz-transform: none;
+            transform: none; }
+
+  .firstcol::before, .secondcol::before, .thirdcol::before {
+    width: 100%;
+    -webkit-transform: none;
+       -moz-transform: none;
+            transform: none;
+    left: 0; }
+
+  .firstcol:hover, .secondcol:hover, .thirdcol:hover {
+    -webkit-flex: 1;
+       -moz-box-flex: 1;
+            flex: 1; }
+
+  article {
+    -webkit-transform: none;
+       -moz-transform: none;
+            transform: none; } }
