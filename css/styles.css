@@ -224,6 +224,9 @@ article {
     flex: 1; }
 
   article {
-    transform: none; } }
+    transform: none; }
+
+  .text__descrip {
+    line-height: 1.7em; } }
 
 /*# sourceMappingURL=styles.css.map */

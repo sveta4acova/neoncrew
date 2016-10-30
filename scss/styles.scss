@@ -281,9 +281,13 @@ article {
 
 	.firstcol:hover, .secondcol:hover, .thirdcol:hover {
 	flex: 1;
-}
+	}
 
 	article {
 		transform: none;
+	}
+
+	.text__descrip {
+		line-height: 1.7em;
 	}
 }
