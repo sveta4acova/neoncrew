@@ -31,8 +31,6 @@
 }
 
 body {
-	// min-width: 790px;
-	height: 100%;
 	font: 14px/18px "CirceLight", Arial, sans-serif;
 	color: #bfbfbf;
 	overflow: hidden;
@@ -170,8 +168,6 @@ article {
 .text__descrip_inline {
 	display: inline;
 	box-shadow: -10px 0 0 0px #000, 10px 0 0 0px #000;
-	-moz-box-shadow: -10px 0 0 0px #000, 10px 0 0 0px #000;
-	line-height: 1em;
 	background-color: #000;
 }
 
